@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    background-color: #FFFF99;
+    width: 80%;
+    margin: auto;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.p-10-0 {
+    padding: 10px 0px;
+}
+
+.p-l-40 {
+    padding-left: 40px;
+}
+
+header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #404040;
+}
+
+header > img {
+    width: 100%;
+}
+
+nav {
+    margin: 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    border-top: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+    padding: 10px 0px;
+}
+
+nav  ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav  ul  li {
+    display: inline;
+    margin: -2.5px; /* giải quyế khoảng trắng thừa */
+}
+
+nav  ul  li  a {
+    /* background-color: greenyellow; */
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav  ul  li:hover {
+    background-color: #00cc57;
+}
+
+.p_bottom p {
+    padding-bottom: 20px;
+}
+
+footer {
+    font-size: 0.70em;
+    text-align: center;
+    margin: 20px 0px;
+}
+/* start About */
+#container {
+    display: block;
+    background-color: #ffffff;
+    font-family:  Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #404040;
+}
+
+.c_content {
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.c_content img {
+    width: 260px;
+    height: 195px;
+    float: left;
+    margin-right: 20px;
+}
+
+.c_content h1 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.inside-list {
+    list-style-type: none;
+    text-indent: 20px;
+    padding: 0;
+}
+
+.inside-list li {
+    position: relative;
+    padding-left: 20px; /* Khoảng cách giữa bullet và nội dung */
+}
+
+.inside-list li::before {
+    content: "•"; /* Ký hiệu dấu bullet */
+    position: absolute;
+    left: 260px;
+}
+
+.weights {
+
+}
+.cardio {
+
+}
+.personal-training {
+
+}
+
+.common-exercises {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.list_no-bullet span {
+    font-weight: bold;
+}
+
+.list_no-bullet p {
+    margin-bottom: 20px;
+}
+/* end About */
+
+
+/* MEDIA QUERY DESKTOP _ TABLET _ MOBILE */
+/* MOBILE */
+@media (max-width:659px){
+    nav {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    nav ul li {
+        display: block;
+        width: 90%;
+        background-color: #00af4b;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 0px 2px;
+        font-size: 1.2em;
+        margin: 10px auto;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    #container {
+        box-shadow: 0px -3px 0px 0px #00af4b;
+    }
+
+    .c_content {
+        display: block;
+    }
+
+    .c_content img {
+        float: none;
+    }
+
+    .c_content h1 {
+        padding-bottom: 15px;
+        text-align: left;
+    }
+
+    .inside-list {
+        list-style-type: disc;
+        text-indent: 0px;
+        margin-left: 20px;
+    }
+
+    .inside-list li {
+        padding-left: 0px;
+    }
+
+    .inside-list li::before {
+        content: "";
+    }
+}
+
+/* TABLET */
+@media (min-width:660px) and (max-width:830px){
+    nav {
+        border-top: none;
+        border-bottom: none;
+    }
+   
+    nav ul li {
+        display: inline-block;
+        width: 18%;
+        background-color: #00af4b;
+        border-radius: 50px;
+        margin: 0px 4px;
+        padding: 12px 0px;
+        font-size: 0.84em;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    #container {
+        box-shadow: 0px -3px 0px 0px #00af4b;
+    }
+
+    .cardio {
+        margin-top: 90px;
+    }
+
+    .personal-training {
+        margin-top: 70px;
+    }
+
+    .c_content h1 {
+        padding-bottom: 15px;
+        text-align: left;
+    }
+
+    .inside-list {
+        float: left;
+    }
+
+    .inside-list {
+        list-style-type: disc;
+        text-indent: 0px;
+        margin-left: 20px;
+    }
+
+    .inside-list li {
+        padding-left: 0px;
+    }
+
+    .inside-list li::before {
+        content: "";
+    }
+}
+}
+
+/* DESKTOP */
+@media (min-width:830px){
+    header {
+        box-shadow: none;
+    }
+    
+    nav {
+        border-top: none;
+        border-bottom: none;
+        margin: -5px 0px;
+    }
+
+    nav ul li {
+        background-color: #00af4b;
+        padding: 12px;
+        /* margin-left: -6px; */
+        border-top: 5px solid #000;
+        border-bottom: 5px solid #000;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+}
